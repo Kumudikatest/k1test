@@ -9,7 +9,8 @@
         "isDirectory": true,
         "children": [
           "8a37fab8-148a-4626-a609-b8ef89a755c8",
-          "51a2d87d-c875-49db-9d8f-a89370878210"
+          "51a2d87d-c875-49db-9d8f-a89370878210",
+          "476ed4e2-6932-43d4-8147-85fb95ee5ff7"
         ],
         "isRemovable": false,
         "filePath": "k1test"
@@ -60,15 +61,33 @@
           "timeout": 60,
           "memory": 128
         }
+      },
+      "476ed4e2-6932-43d4-8147-85fb95ee5ff7": {
+        "id": "476ed4e2-6932-43d4-8147-85fb95ee5ff7",
+        "parent": "fd87af51-a3a9-40b6-b0c3-e2e833f12c42",
+        "name": "!@#$%%.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "k1test/!@#$%%.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
       }
     },
     "deletedFiles": [],
     "rootNode": "fd87af51-a3a9-40b6-b0c3-e2e833f12c42",
     "openFiles": [
       "8a37fab8-148a-4626-a609-b8ef89a755c8",
-      "51a2d87d-c875-49db-9d8f-a89370878210"
+      "51a2d87d-c875-49db-9d8f-a89370878210",
+      "476ed4e2-6932-43d4-8147-85fb95ee5ff7"
     ],
-    "currentFileId": "51a2d87d-c875-49db-9d8f-a89370878210",
+    "currentFileId": "476ed4e2-6932-43d4-8147-85fb95ee5ff7",
     "resources": {
       "apigusEast1TestAPIdelete": {
         "name": "apigusEast1TestAPIdelete",
@@ -119,7 +138,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1542091424137
+    "lastSave": 1542092019249
   },
   "VCS_STATE": {
     "provider": "GitHub",
