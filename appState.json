@@ -1,0 +1,131 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "fd87af51-a3a9-40b6-b0c3-e2e833f12c42": {
+        "id": "fd87af51-a3a9-40b6-b0c3-e2e833f12c42",
+        "parent": null,
+        "name": "k1test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "8a37fab8-148a-4626-a609-b8ef89a755c8",
+          "51a2d87d-c875-49db-9d8f-a89370878210"
+        ],
+        "isRemovable": false,
+        "filePath": "k1test"
+      },
+      "8a37fab8-148a-4626-a609-b8ef89a755c8": {
+        "id": "8a37fab8-148a-4626-a609-b8ef89a755c8",
+        "parent": "fd87af51-a3a9-40b6-b0c3-e2e833f12c42",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "k1test/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        },
+        "testCases": {
+          "f0d72206-d941-4856-853b-3c4b0a527fb2": {
+            "id": "f0d72206-d941-4856-853b-3c4b0a527fb2",
+            "name": "Unnamed event",
+            "functionId": "8a37fab8-148a-4626-a609-b8ef89a755c8",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      },
+      "51a2d87d-c875-49db-9d8f-a89370878210": {
+        "id": "51a2d87d-c875-49db-9d8f-a89370878210",
+        "parent": "fd87af51-a3a9-40b6-b0c3-e2e833f12c42",
+        "name": "@$$%testk.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "k1test/@$$%testk.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPIdelete",
+            "config": {}
+          }
+        ],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "fd87af51-a3a9-40b6-b0c3-e2e833f12c42",
+    "openFiles": [
+      "8a37fab8-148a-4626-a609-b8ef89a755c8",
+      "51a2d87d-c875-49db-9d8f-a89370878210"
+    ],
+    "currentFileId": "51a2d87d-c875-49db-9d8f-a89370878210",
+    "resources": {
+      "apigusEast1TestAPIdelete": {
+        "name": "apigusEast1TestAPIdelete",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/",
+          "resourceName": "",
+          "resourceId": "h2lelj6j7k",
+          "restMethod": "DELETE",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "test",
+          "stageDeploymentId": "8udu0l"
+        },
+        "globallyEditable": false
+      }
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    },
+    "lambdaId": "8a37fab8-148a-4626-a609-b8ef89a755c8"
+  },
+  "PROJECT_META": {
+    "projectName": "k1test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "lastSave": 1542091424137
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "k1test",
+      "url": "https://github.com/Kumudikatest/k1test"
+    }
+  }
+}
